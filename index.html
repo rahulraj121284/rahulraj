@@ -1158,6 +1158,71 @@
   </footer>
 
 
+
+  <!-- =========================
+     BACK TO TOP BUTTON
+========================= -->
+
+<button
+  id="backToTop"
+  aria-label="Back to top"
+  title="Back to top"
+  class="fixed bottom-6 left-6 z-50
+         h-12 w-12 rounded-full
+         bg-violet-600 text-white
+         flex items-center justify-center
+         shadow-2xl shadow-violet-500/30
+         opacity-0 invisible
+         translate-y-5
+         hover:bg-violet-500 hover:scale-110
+         transition-all duration-300"
+>
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  // Show button after scrolling
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTop.classList.remove(
+        "opacity-0",
+        "invisible",
+        "translate-y-5"
+      );
+
+      backToTop.classList.add(
+        "opacity-100",
+        "visible",
+        "translate-y-0"
+      );
+    } else {
+      backToTop.classList.add(
+        "opacity-0",
+        "invisible",
+        "translate-y-5"
+      );
+
+      backToTop.classList.remove(
+        "opacity-100",
+        "visible",
+        "translate-y-0"
+      );
+    }
+  });
+
+  // Smooth scroll to top
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+
+
+
   <!-- JAVASCRIPT -->
   <script>
 
