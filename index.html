@@ -12,6 +12,7 @@
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module"> import lucide from 'https://cdn.jsdelivr.net/npm/lucide@1.41.0/+esm' </script>
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -646,110 +647,421 @@
 
 
     <!-- CONTACT -->
-    <section id="contact" class="py-28 bg-white/[0.02]">
-      <div class="max-w-5xl mx-auto px-5 lg:px-8">
+    <!-- =========================
+     CONTACT SECTION
+========================= -->
+<section id="contact" class="py-28 bg-white/[0.02]">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
 
-        <div class="text-center reveal">
+    <!-- Section Heading -->
+    <div class="text-center reveal">
+      <p class="text-violet-400 font-semibold mb-3">
+        GET IN TOUCH
+      </p>
 
-          <p class="text-violet-400 font-semibold mb-3">
-            GET IN TOUCH
+      <h2 class="font-display text-4xl sm:text-6xl font-bold">
+        Let's create something
+        <span class="gradient-text">amazing.</span>
+      </h2>
+
+      <p class="max-w-2xl mx-auto mt-6 text-slate-400 leading-7">
+        Have a project, business idea, or collaboration in mind?
+        Send me a message and I'll get back to you soon.
+      </p>
+    </div>
+
+
+    <!-- Contact Grid -->
+    <div class="grid lg:grid-cols-5 gap-6 mt-14">
+
+      <!-- LEFT SIDE -->
+      <div class="lg:col-span-2 space-y-5">
+
+        <!-- Contact Card -->
+        <div class="glass rounded-3xl p-7 reveal">
+
+          <p class="text-sm text-slate-500 uppercase tracking-widest">
+            Contact Details
           </p>
 
-          <h2 class="font-display text-4xl sm:text-6xl font-bold">
-            Have an idea?
-            <span class="gradient-text">Let's build it.</span>
-          </h2>
+          <div class="mt-7 space-y-6">
 
-          <p class="max-w-xl mx-auto mt-6 text-slate-400 leading-7">
-            Tell me a little about your project and let's explore how we can
-            turn your idea into something exceptional.
-          </p>
+            <!-- Email -->
+            <a
+              href="mailto:hello@rahulraj.com"
+              class="flex items-center gap-4 group"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center group-hover:bg-violet-500 group-hover:text-white transition"
+              >
+                <i data-lucide="mail"></i>
+              </div>
 
+              <div>
+                <p class="text-sm text-slate-500">Email</p>
+                <p class="text-sm font-medium mt-1">
+                  hello@rahulraj.com
+                </p>
+              </div>
+            </a>
+
+
+            <!-- Phone -->
+            <a
+              href="tel:+918454972300"
+              class="flex items-center gap-4 group"
+            >
+              <div
+                class="h-12 w-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center group-hover:bg-blue-500 group-hover:text-white transition"
+              >
+                <i data-lucide="phone"></i>
+              </div>
+
+              <div>
+                <p class="text-sm text-slate-500">Phone</p>
+                <p class="text-sm font-medium mt-1">
+                  +91 84549 72300
+                </p>
+              </div>
+            </a>
+
+
+            <!-- Location -->
+            <div class="flex items-center gap-4">
+              <div
+                class="h-12 w-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center"
+              >
+                <i data-lucide="map-pin"></i>
+              </div>
+
+              <div>
+                <p class="text-sm text-slate-500">Location</p>
+                <p class="text-sm font-medium mt-1">
+                  Mumbai, Maharashtra, India
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
 
 
+        <!-- Social Media -->
+        <div class="glass rounded-3xl p-7 reveal">
+
+          <p class="text-sm text-slate-500 uppercase tracking-widest">
+            Follow Me
+          </p>
+
+          <div class="grid grid-cols-4 gap-3 mt-6">
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="h-12 rounded-xl glass flex items-center justify-center hover:bg-pink-500 hover:text-white transition"
+            >
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              class="h-12 rounded-xl glass flex items-center justify-center hover:bg-blue-600 hover:text-white transition"
+            >
+              <i data-lucide="linkedin"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              class="h-12 rounded-xl glass flex items-center justify-center hover:bg-white hover:text-black transition"
+            >
+              <i data-lucide="github"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/918454972300?text=Hi%20Rahul%2C%20I%20found%20your%20portfolio."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              class="h-12 rounded-xl glass flex items-center justify-center text-green-400 hover:bg-green-500 hover:text-white transition"
+            >
+              <i data-lucide="message-circle"></i>
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- Mumbai Map -->
+        <div class="glass rounded-3xl overflow-hidden reveal">
+
+          <div class="p-5">
+            <div class="flex items-center gap-3">
+              <div
+                class="h-10 w-10 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center"
+              >
+                <i data-lucide="map"></i>
+              </div>
+
+              <div>
+                <p class="font-semibold">Find Me</p>
+                <p class="text-xs text-slate-500">
+                  Mumbai, Maharashtra
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps?q=Mumbai,Maharashtra,India&output=embed"
+            width="100%"
+            height="260"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Rahul Raj location in Mumbai"
+          ></iframe>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT SIDE FORM -->
+      <div class="lg:col-span-3">
+
         <form
           id="contactForm"
-          class="glass rounded-3xl p-6 sm:p-10 mt-12 reveal"
+          class="glass rounded-3xl p-6 sm:p-10 reveal"
         >
 
+          <div class="flex items-center justify-between mb-8">
+
+            <div>
+              <h3 class="font-display text-2xl font-semibold">
+                Send a message
+              </h3>
+
+              <p class="text-sm text-slate-500 mt-1">
+                I'll reply as soon as possible.
+              </p>
+            </div>
+
+            <div
+              class="hidden sm:flex h-12 w-12 rounded-xl bg-violet-500/10 text-violet-400 items-center justify-center"
+            >
+              <i data-lucide="send"></i>
+            </div>
+
+          </div>
+
+
+          <!-- Name + Email -->
           <div class="grid md:grid-cols-2 gap-5">
 
             <div>
-              <label class="text-sm text-slate-400">
+              <label
+                for="name"
+                class="text-sm text-slate-400"
+              >
                 Your Name
               </label>
 
               <input
+                id="name"
+                name="name"
                 required
                 type="text"
-                placeholder="Rahul Sharma"
-                class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 transition"
+                placeholder="Your name"
+                class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/10 transition"
               />
             </div>
 
+
             <div>
-              <label class="text-sm text-slate-400">
+              <label
+                for="email"
+                class="text-sm text-slate-400"
+              >
                 Email Address
               </label>
 
               <input
+                id="email"
+                name="email"
                 required
                 type="email"
-                placeholder="hello@example.com"
-                class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 transition"
+                placeholder="you@example.com"
+                class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/10 transition"
               />
             </div>
 
           </div>
 
 
+          <!-- Phone -->
           <div class="mt-5">
-            <label class="text-sm text-slate-400">
-              Project Type
+
+            <label
+              for="phone"
+              class="text-sm text-slate-400"
+            >
+              Phone / WhatsApp
+            </label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="+91 98765 43210"
+              class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/10 transition"
+            />
+
+          </div>
+
+
+          <!-- Service -->
+          <div class="mt-5">
+
+            <label
+              for="service"
+              class="text-sm text-slate-400"
+            >
+              What do you need?
             </label>
 
             <select
+              id="service"
+              name="service"
               class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 transition text-slate-300"
             >
               <option>Website Design</option>
               <option>Web Development</option>
               <option>UI/UX Design</option>
               <option>Portfolio Website</option>
+              <option>E-commerce Website</option>
+              <option>Landing Page</option>
               <option>Other</option>
             </select>
+
           </div>
 
 
+          <!-- Budget -->
           <div class="mt-5">
-            <label class="text-sm text-slate-400">
-              Tell me about your project
+
+            <label
+              for="budget"
+              class="text-sm text-slate-400"
+            >
+              Approximate Budget
+            </label>
+
+            <select
+              id="budget"
+              name="budget"
+              class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 transition text-slate-300"
+            >
+              <option>₹10,000 – ₹25,000</option>
+              <option>₹25,000 – ₹50,000</option>
+              <option>₹50,000 – ₹1,00,000</option>
+              <option>₹1,00,000+</option>
+              <option>Let's discuss</option>
+            </select>
+
+          </div>
+
+
+          <!-- Message -->
+          <div class="mt-5">
+
+            <label
+              for="message"
+              class="text-sm text-slate-400"
+            >
+              Project Details
             </label>
 
             <textarea
+              id="message"
+              name="message"
               required
               rows="6"
-              placeholder="Tell me about your idea..."
-              class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 transition resize-none"
+              placeholder="Tell me about your project, goals, timeline..."
+              class="mt-2 w-full rounded-xl bg-black/30 border border-white/10 px-4 py-3.5 outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-500/10 transition resize-none"
             ></textarea>
+
           </div>
 
 
+          <!-- Submit -->
           <button
             type="submit"
-            class="mt-6 inline-flex items-center gap-2 rounded-xl bg-violet-600 px-7 py-3.5 font-semibold hover:bg-violet-500 transition shadow-glow"
+            class="mt-6 w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-violet-600 px-8 py-4 font-semibold hover:bg-violet-500 transition shadow-glow"
           >
             Send Message
-            <i data-lucide="send" class="w-4"></i>
+            <i data-lucide="arrow-up-right" class="w-5"></i>
           </button>
 
-          <p id="formMessage" class="hidden mt-4 text-green-400 text-sm">
-            Thanks! Your message has been received.
-          </p>
+
+          <!-- Success Message -->
+          <div
+            id="formMessage"
+            class="hidden mt-5 rounded-xl border border-green-500/20 bg-green-500/10 p-4 text-green-400 text-sm"
+          >
+            <div class="flex items-center gap-3">
+              <i data-lucide="check-circle" class="w-5"></i>
+              <span>
+                Thanks! Your message has been received.
+              </span>
+            </div>
+          </div>
 
         </form>
+
       </div>
-    </section>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     FLOATING WHATSAPP
+========================= -->
+<a
+  href="https://wa.me/918454972300?text=Hi%20Rahul%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat with Rahul Raj on WhatsApp"
+  class="fixed bottom-6 right-6 z-50 group"
+>
+  <div
+    class="flex items-center gap-3 rounded-full bg-green-500 px-5 py-3.5 text-white font-semibold shadow-2xl shadow-green-500/30 hover:bg-green-400 hover:scale-105 transition-all duration-300"
+  >
+    <i data-lucide="message-circle" class="w-5 h-5"></i>
+    <span class="hidden sm:inline">
+      Chat on WhatsApp
+    </span>
+  </div>
+</a>
+
+
+
+
 
   </main>
 
@@ -892,6 +1204,29 @@
       new Date().getFullYear();
 
   </script>
+
+  <!-- =========================
+     CONTACT FORM JAVASCRIPT
+========================= -->
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const formMessage = document.getElementById("formMessage");
+
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    formMessage.classList.remove("hidden");
+
+    contactForm.reset();
+
+    setTimeout(() => {
+      formMessage.classList.add("hidden");
+    }, 5000);
+  });
+
+  // Refresh Lucide icons
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
